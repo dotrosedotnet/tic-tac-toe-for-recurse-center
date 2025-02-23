@@ -184,6 +184,17 @@ def draw_cursor(grid_window):
 
 
 # TODO: draw and redraw grid need to be their own things so that my cool cursor can work. also I need to get on mapping the window grid to the game grid so that window grid cursor positions are bounced back as game grid coordinates in move data
+# can I OVERLAY a cursor window on top of a player symbols window on top of the grid window?
+
+
+def cursor_move_initialize(new_cursor_location):
+    """
+    takes in game grid coordinate for new location
+    clears entire window
+    prints grid in grid window
+    prints grid state (who has what squares) over grid
+    prints cursor at new location
+    """
 
 
 def move_cursor(grid_window):
@@ -218,11 +229,6 @@ def move_cursor(grid_window):
     ):  # this is doing nothing right now because I don't want to deal with it
         if key == Key.esc:
             return False
-
-    # with keyboard.Listener(
-    #     on_press=on_key_press, on_release=on_key_release
-    # ) as listener:
-    #     listener.join()
 
     listener = Listener(on_press=on_key_press, on_release=on_key_release)
     listener.start()
@@ -265,13 +271,6 @@ def move_cursor(grid_window):
             else:
                 move_right()
         draw_cursor(grid_window)
-
-
-CURSOR_TEXT = """
-▄▄▄
-███
-▀▀▀
-"""
 
 
 def make_grid_win(grid):
