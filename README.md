@@ -30,4 +30,6 @@ My curious tic tac toe implementation (aspirationally) includes:
 
 ## what I'm presently distracted by
 
-- making the cursor fill the whole square, which is a retained mode PITA
+### making the cursor fill the whole square, which is a retained mode PITA
+
+before I can modify the cursor effectively I need to make sure that the grid is redrawn behind it (and the marked squares) on every move, and that the old cursor position is removed. fun! lol just a bit more than I expected
