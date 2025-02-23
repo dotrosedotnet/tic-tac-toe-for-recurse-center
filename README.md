@@ -7,3 +7,12 @@ I'm a 39 year old career switcher focusing on transitioning from life as a music
 I tried to implement this with some OOP but I keep being turned off by the connection between objects and state.
 
 So I'm mostly sticking to functions and seeing how this works out. It's exhilerating!
+
+## Mighta gone overboard with this
+
+My curious tic tac toe implementation (aspirationally) includes:
+
+- [x] square grid of variable size
+  - [ ] size stipulated by command argument
+- [x] rules which follow the size of the grid
+- [ ] more than two players
