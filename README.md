@@ -23,10 +23,17 @@ My curious tic tac toe implementation (aspirationally) includes:
 
 ## Urgent TODO
 
-- map curses window grid onto game grid, so that each square has its' own coordinate
-  - this will make win-states calculable
-- win-states lol
-- putting down moves!
+### map curses window grid onto game grid, so that each square has its' own coordinate
+
+this will make win-states calculable
+
+### win-states lol
+
+they are presently calculated dependent on grid size, but they can't be implemented until...
+
+### players can enter moves
+
+players will take turns inputting their symbol using either spacebar or enter
 
 ## what I'm presently distracted by
 
