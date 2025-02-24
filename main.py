@@ -185,6 +185,7 @@ def draw_cursor(grid_window):
 
 # TODO: draw and redraw grid need to be their own things so that my cool cursor can work. also I need to get on mapping the window grid to the game grid so that window grid cursor positions are bounced back as game grid coordinates in move data
 # can I OVERLAY a cursor window on top of a player symbols window on top of the grid window?
+# YES i CAN! the 'overlay' functionality of curses gives us that option, as described in my test window script
 
 
 def cursor_move_initialize(new_cursor_location):
